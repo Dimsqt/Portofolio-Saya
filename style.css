@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+header {
+    text-align: center;
+    margin: 2em 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+article {
+    text-align: center;
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+.skill-container {
+    max-width: 600px;
+    margin: 3em auto;
+}
+
+
+footer {
+    padding: 1em;
+    background-color: #e0e0e0;
+    text-align: center;
+    color: #555;
+    text-decoration: none;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #005999;
+}
+
+nav {
+  padding: 15px 25px;
+  text-align: center;
+
+  background: linear-gradient(270deg, 
+    #1e90ff, #6a0dad, #8a2be2, #4b0082, #1e90ff);
+  background-size: 600% 600%;
+  animation: rainbowBG 12s ease infinite;
+}
+
+@keyframes rainbowBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+nav a {
+  margin: 0 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff; 
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #1e90ff, #6a0dad, #8a2be2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+
+  background: linear-gradient(90deg, 
+    #1e90ff, #6a0dad, #000000);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: gradient-move 6s ease infinite;
+}
+
+@keyframes gradient-move {
+  to { background-position: 200% center; }
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #1a1a1a;
+  border-top: 2px solid #333;
+}
+
+footer p {
+  margin: 8px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+footer a {
+  position: relative;
+  margin: 0 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;  
+  transition: all 0.5s ease;
+}
+
+footer a:hover {
+  background: linear-gradient(90deg, #1e90ff, #6a0dad, #8a2be2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
