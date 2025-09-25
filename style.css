@@ -1,7 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333333;
+  color: #f5f5f5;
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(147,51,234,0.3), transparent 40%),
+              radial-gradient(circle at 80% 30%, rgba(0,180,255,0.25), transparent 50%),
+              radial-gradient(circle at 60% 80%, rgba(147,51,234,0.2), transparent 40%),
+              #000000;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,20 +21,43 @@ body {
     padding: 0;
 }
 
+section {
+  padding: 10px 30px;
+  min-height: 10vh; 
+}
+
+.about {
+  min-height: 75vh;
+  padding-top: 10vh;
+}
+
+.contact {
+  padding-top: 20vh;
+}
+
+
 nav {
-    background: #f0f0f0;
-    padding: 1em;
-    text-align: center;
+  width: 100%;
+  text-align: center;  
+  padding: 20px;
+  position: static;     
+  background: none;   
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
+  margin: 0 25px;  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f5f5f5;
 }
 
 nav a:hover {
-    color: #007acc;
+  background: linear-gradient(90deg, #60a5fa, #3b82f6, #9333ea, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(147, 51, 234, 0.7), 
+               0 0 15px rgba(59, 130, 246, 0.6);
 }
 
 header {
@@ -49,59 +82,28 @@ article {
     margin: 3em auto;
 }
 
-
-footer {
-    padding: 1em;
-    background-color: #e0e0e0;
-    text-align: center;
-    color: #555;
-    text-decoration: none;
-}
-
-footer a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #005999;
-}
-
-nav {
-  padding: 15px 25px;
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
   text-align: center;
+  margin: 20px 0;
 
-  background: linear-gradient(270deg, 
-    #1e90ff, #6a0dad, #8a2be2, #4b0082, #1e90ff);
-  background-size: 600% 600%;
-  animation: rainbowBG 12s ease infinite;
-}
-
-@keyframes rainbowBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-nav a {
-  margin: 0 10px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #ffffff; 
-  transition: all 0.5s ease;
-  position: relative;
-}
-
-nav a:hover {
-  background: linear-gradient(90deg, #1e90ff, #6a0dad, #8a2be2);
+  background: linear-gradient(90deg, 
+    #1e90ff, #6a0dad, #000000);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  animation: gradient-move 3s ease infinite;
 }
 
-header h1 {
-  font-size: 48px;
+@keyframes gradient-move {
+  to { background-position: 200% center; }
+}
+
+.contact h1 {
+  font-size: 42px;
   font-weight: 700;
   text-align: center;
   margin: 20px 0;
@@ -120,33 +122,447 @@ header h1 {
   to { background-position: 200% center; }
 }
 
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  background: #1a1a1a;
-  border-top: 2px solid #333;
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-footer p {
-  margin: 8px 0;
-  color: #ddd;
-  font-size: 14px;
-}
-
-footer a {
-  position: relative;
-  margin: 0 8px;
+label {
   font-weight: 600;
-  text-decoration: none;
-  color: #ffffff;  
-  transition: all 0.5s ease;
+  color: #ddd;
 }
 
-footer a:hover {
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
   background: linear-gradient(90deg, #1e90ff, #6a0dad, #8a2be2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.pendidikan2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.pendidikan2 h3{
+  font-family: helvetica;
+}
+
+.sd {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.sd:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.sd::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.smp {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.smp:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.smp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+.smk {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.smk:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.smk::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.sd img {
+  width: 200px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.smp img {
+  width: 200px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.smk img {
+  width: 200px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.html {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.html:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.html::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.html img{
+  width: 135px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.css {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.css:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.css::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.css img{
+  width: 135px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.js {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.js:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.js::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.js img{
+  width: 135px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.py {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.py:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.py::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.py img{
+  width: 135px;      
+  height: 100px 100px;    
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.keahlian {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.keahlian h3{
+  font-family: helvetica;
+}
+
+.cv {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cv a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #1e90ff, #6a0dad, #8a2be2);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); 
+  border-top: 2px solid #444; 
+}  
+
+.sosmed img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.sosmed img:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+}
+
+.p1 {
+  position: relative;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;       
+  display: inline-block;  
+  margin: 2em auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.p1:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.7),
+              0 0 40px rgba(14, 165, 233, 0.7);
+  border-image: linear-gradient(45deg, #a855f7, #38bdf8) 1; 
+}
+
+.p1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(45deg, #9333ea, #0ea5e9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.p1 img {
+  width: 100%;     
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}

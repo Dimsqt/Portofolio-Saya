@@ -1,46 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adimas Hana Satria | Web Developer</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adimas Hana Satria | Web Developer</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="about.html">About Me</a> |
-        <a href="Pendidikan.html">Pendidikan </a> |
-    </nav>
+  <!-- Navigasi -->
+  <nav>
+    <a href="#home">Home</a> 
+    <a href="#about">About Me</a> 
+    <a href="#pendidikan">Pendidikan</a> 
+    <a href="#keahlian">Keahlian</a>
+    <a href="#prestasi">Prestasi</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- HOME -->
+  <section id="home">
+    <div class="home">
     <header>
-        <img src="gambar.jpg" alt="Foto Adimas Hana Satria"> 
-        <h1>Adimas Hana Satria</h1>
-        <h2>(Web Developer)</h2>
+      <img src="gambar.jpg" alt="Foto Adimas Hana Satria"> 
+      <h1>Adimas Hana Satria</h1>
+      <h2>(Web Developer)</h2>
     </header>
-
     <hr>
-
     <article>
-        <h2>Overview</h2>
-        <p>
-            Hi, Saya adalah web developer yang berdomisili di Surabaya.
-            Saat ini sedang belajar HTML dan CSS dari kakak saya yang berprofil Web Developer di Universitas Pembangunan Nasional.
-        </p>
+      <h2>Overview</h2>
+      <p>
+        Hi, Saya adalah web developer yang berdomisili di Surabaya.
+        Saat ini sedang belajar HTML dan CSS dari kakak saya yang berprofil Web Developer di Universitas Pembangunan Nasional.
+      </p>
     </article>
+      <div class="cv">
+    <a href="CV Adimas Hana Satria.pdf" download="CV Adimas Hana Satria.pdf">
+  📄 Download CV
+</a> </div>
+    </div>
+  </section>
 
-</body>
-</html>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+    <article>
+      <header><h1>About Me</h1></header>
+      <p>
+        Hi, saya adalah web developer yang berdomisili di Surabaya.
+        Saat ini sedang belajar HTML dan CSS dari Kakak saya.
+      </p>
+      <p>
+        Saya memang masih baru dalam web development, karena itu
+        saya tidak akan pernah berhenti belajar.
+      </p>
+      <p>
+        Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+      </p>
+    </article>
+    <div class="cv">
+    <a href="personality.pdf">Personality Test Dari TalentDNA</a></div>
+    </div>
+  </section>
 
-        <footer>
-        <p>&copy; 2025 Portal Dims X RPL 1 | Dibuat untuk project Kelas</p>
-        <p>Follow Me:
-            <a href="https://www.instagram.com/dimmsqt?igsh=aDN3czc2NzUzbGxw" target="_blank">Instagram</a>
-            <a href="https://github.com/Dimsqt" target="_blank">Github</a>
-        </p>
-    </footer>
+  <!-- PENDIDIKAN -->
+  <section id="pendidikan">
+    <div class="pendidikan1">
+    <header>
+      <h1>Pendidikan</h1>
+    </header>   
+    <hr>
+    <article>
+      <h2>Riwayat Pendidikan</h2>
+      <div class="pendidikan2"><div class="sd"><img src="sd.jpg"><h3>SDN Ketintang 1 Surabaya (2016-2022)</h3></div>
+      <div class="smp"><img src="smp.jpg"><h3>SMPN 13 Surabaya (2022-2025)</h3></div>
+      <div class="smk"><img src="smk.jpg"><h3>SMKN 1 Surabaya (2025-Sekarang)</h3></div>
+    </article>
+    </div>
+  </section>
+
+  <!--KEAHLIAN-->
+  <section id="keahlian"></section>
+  <article>
+    <header><h1>Keahlian</h1></header>
+    <div class="keahlian">
+      <div class="html">
+    <img src="html.png" alt="html">
+    <h3>HTML</h3></div>
+      <div class="css">
+    <img src="css.svg" alt="css">
+    <h3>CSS</h3></div>
+      <div class="js">
+    <img src="js.webp" alt="js">
+    <h3>JavaScript</h3></div>
+      <div class="py">
+    <img src="py.png" alt="py">
+    <h3>Python</h3></div>
+    </div>
+  </article>
+
+  <!-- PRESTASI -->
+  <section id="prestasi">
+    <div class="prestasi">
+    <header><h1>Prestasi</h1></header>
+    <article>
+      <div class="p1">
+      <img src="p1.jpg">
+       <p>Juara 2
+       Battle Of Champion VOL 9</p>
+      </div>
+    </article>
+    </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact">
+    <h1>Contact Me</h1>
+    <form>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" placeholder="alamat email"><br><br>
+      <label for="message">Pesan</label><br>
+      <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="50"></textarea><br><br>
+      <input type="submit" value="Kirim">
+    </form>
+    </div>
+  </section>
+  <div class="sosmed">
+  <a href="https://www.instagram.com/dimmsqt?igsh=aDN3czc2NzUzbGxw"><img src="ig.png"></a>
+  <a href="https://github.com/Dimsqt"><img src="gh.svg"></a>
+  <a href="https://www.linkedin.com/in/adimas-hana-satria-725608382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="li.png"></a>
 </body>
 </html>
