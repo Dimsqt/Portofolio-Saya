@@ -4,130 +4,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adimas Hana Satria | Web Developer</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigasi -->
+
+  <!-- ==== Navigasi ==== -->
   <nav>
-    <a href="#home">Home</a> 
-    <a href="#about">About Me</a> 
-    <a href="#pendidikan">Pendidikan</a> 
-    <a href="#keahlian">Keahlian</a>
-    <a href="#prestasi">Prestasi</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">Adimas Hana Satria</div>
+    <div class="nav-links">
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#prestasi">Prestasi</a>
+      <a href="#contact">Kontak</a>
+    </div>
   </nav>
+<div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
-  <!-- HOME -->
+
+  <!-- ==== HOME ==== -->
   <section id="home">
-    <div class="home">
-    <header>
-      <img src="gambar.jpg" alt="Foto Adimas Hana Satria"> 
-      <h1>Adimas Hana Satria</h1>
-      <h2>(Web Developer)</h2>
-    </header>
-    <hr>
-    <article>
-      <h2>Overview</h2>
-      <p>
-        Hi, Saya adalah web developer yang berdomisili di Surabaya.
-        Saat ini sedang belajar HTML dan CSS dari kakak saya yang berprofil Web Developer di Universitas Pembangunan Nasional.
-      </p>
-    </article>
-      <div class="cv">
-    <a href="CV Adimas Hana Satria.pdf" download="CV Adimas Hana Satria.pdf">
-  📄 Download CV
-</a> </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about">
-    <article>
-      <header><h1>About Me</h1></header>
-      <p>
-        Hi, saya adalah web developer yang berdomisili di Surabaya.
-        Saat ini sedang belajar HTML dan CSS dari Kakak saya.
-      </p>
-      <p>
-        Saya memang masih baru dalam web development, karena itu
-        saya tidak akan pernah berhenti belajar.
-      </p>
-      <p>
-        Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
-      </p>
-    </article>
-    <div class="cv">
-    <a href="personality.pdf">Personality Test Dari TalentDNA</a></div>
-    </div>
-  </section>
-
-  <!-- PENDIDIKAN -->
-  <section id="pendidikan">
-    <div class="pendidikan1">
-    <header>
-      <h1>Pendidikan</h1>
-    </header>   
-    <hr>
-    <article>
-      <h2>Riwayat Pendidikan</h2>
-      <div class="pendidikan2"><div class="sd"><img src="sd.jpg"><h3>SDN Ketintang 1 Surabaya (2016-2022)</h3></div>
-      <div class="smp"><img src="smp.jpg"><h3>SMPN 13 Surabaya (2022-2025)</h3></div>
-      <div class="smk"><img src="smk.jpg"><h3>SMKN 1 Surabaya (2025-Sekarang)</h3></div>
-    </article>
-    </div>
-  </section>
-
-  <!--KEAHLIAN-->
-  <section id="keahlian"></section>
-  <article>
-    <header><h1>Keahlian</h1></header>
-    <div class="keahlian">
-      <div class="html">
-    <img src="html.png" alt="html">
-    <h3>HTML</h3></div>
-      <div class="css">
-    <img src="css.svg" alt="css">
-    <h3>CSS</h3></div>
-      <div class="js">
-    <img src="js.webp" alt="js">
-    <h3>JavaScript</h3></div>
-      <div class="py">
-    <img src="py.png" alt="py">
-    <h3>Python</h3></div>
-    </div>
-  </article>
-
-  <!-- PRESTASI -->
-  <section id="prestasi">
-    <div class="prestasi">
-    <header><h1>Prestasi</h1></header>
-    <article>
-      <div class="p1">
-      <img src="p1.jpg">
-       <p>Juara 2
-       Battle Of Champion VOL 9</p>
+    <div class="home-container">
+      <div class="home-left">
+        <img src="gambar.jpg" alt="Foto Adimas Hana Satria">
       </div>
-    </article>
-    </div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact">
-    <h1>Contact Me</h1>
-    <form>
-      <label for="email">Email</label><br>
-      <input type="email" name="email" placeholder="alamat email"><br><br>
-      <label for="message">Pesan</label><br>
-      <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="50"></textarea><br><br>
-      <input type="submit" value="Kirim">
-    </form>
+      <div class="home-right">
+        <h1>Adimas Hana Satria</h1>
+        <h2>(Web Developer)</h2>
+        <p>Hi, saya adalah web developer yang berdomisili di Surabaya.
+           <br>Saat ini sedang belajar HTML dan CSS dari kakak saya yang berprofesi
+            <br>sebagai Web Developer di Universitas Pembangunan Nasional.
+        </p>
+        <div class="cv">
+          <a href="CV Adimas Hana Satria.pdf" download>📄 Download CV</a>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="sosmed">
-  <a href="https://www.instagram.com/dimmsqt?igsh=aDN3czc2NzUzbGxw"><img src="ig.png"></a>
-  <a href="https://github.com/Dimsqt"><img src="gh.svg"></a>
-  <a href="https://www.linkedin.com/in/adimas-hana-satria-725608382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="li.png"></a>
+
+  <!-- ==== ABOUT ==== -->
+  <section id="about">
+    <div class="fade">
+      <h1>Tentang Saya</h1>
+      <p>
+        Halo! Saya seorang Web Developer pemula yang tinggal di Surabaya dan sedang menapaki perjalanan dalam dunia pengembangan web. Meskipun masih baru, saya memiliki semangat besar untuk terus belajar dan menguasai teknologi seperti HTML, CSS, dan JavaScript agar bisa menciptakan website yang menarik, fungsional, dan responsif.
+      </p>
+      <p>
+        Saat ini saya sedang mengembangkan proyek portofolio pribadi sebagai langkah awal untuk membangun karier di bidang front-end development. Melalui proyek ini, saya berusaha menggabungkan tampilan yang sederhana namun estetis dengan pengalaman pengguna yang baik. Saya percaya setiap proyek adalah kesempatan untuk berkembang, belajar hal baru, dan mendekatkan diri pada impian saya menjadi seorang web developer yang profesional dan kreatif.
+      </p>
+      <div class="cv">
+        <a href="personality.pdf" target="_blank">Personality Test dari TalentDNA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== PENDIDIKAN ==== -->
+  <section id="pendidikan">
+    <div class="fade">
+      <h1>Pendidikan</h1>
+      <div class="pendidikan-grid">
+        <div class="card">
+          <img src="sd.jpg" alt="SD"onclick="showImagePopupEdu('sd.jpg')">
+          <h3>SDN Ketintang 1 Surabaya (2016–2022)</h3>
+        </div>
+        <div class="card">
+          <img src="smp.jpg" alt="SMP"onclick="showImagePopupEdu('smp.jpg')">
+          <h3>SMPN 13 Surabaya (2022–2025)</h3>
+        </div>
+        <div class="card">
+          <img src="smk.jpg" alt="SMK"onclick="showImagePopupEdu('smk.jpg')">
+          <h3>SMKN 1 Surabaya (2025–Sekarang)</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== KEAHLIAN ==== -->
+  <section id="keahlian">
+    <div class="fade">
+      <h1>Keahlian</h1>
+      <div class="keahlian-grid">
+        <div class="skill">
+          <img src="html.png" alt="HTML"onclick="showPopup(
+               '&lt;h2&gt;HTML&lt;/h2&gt;&lt;p&gt;HTML (HyperText Markup Language) adalah bahasa standar untuk membuat dan menampilkan halaman web di browser. HTML memberi struktur dan isi pada halaman - seperti teks, gambar, video, tombol, dan tautan.&lt;/p&gt;&lt;img src=\'html.png\' alt=\'HTML\' style=\'width:50%; max-width:600px; margin-top:15px; \'&gt;'
+             )">
+          <h3>HTML</h3>
+        </div>
+        <div class="skill">
+          <img src="css.png" alt="CSS"onclick="showPopup(
+               '&lt;h2&gt;CSS&lt;/h2&gt;&lt;p&gt;CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak halaman web. Dengan CSS, kita dapat mengubah warna, font, ukuran, jarak, dan elemen visual lainnya pada halaman web agar terlihat menarik dan sesuai dengan desain yang diinginkan.&lt;/p&gt;&lt;img src=\'css.png\' alt=\'CSS\' style=\'width:50%; max-width:600px; margin-top:15px; \'&gt;'
+             )">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill">
+          <img src="js.webp" alt="JavaScript"onclick="showPopup(
+               '&lt;h2&gt;JavaScript&lt;/h2&gt;&lt;p&gt;JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif dan dinamis. Dengan JavaScript, kita dapat menambahkan fitur-fitur seperti animasi, validasi formulir, efek visual, dan interaksi pengguna lainnya pada halaman web.&lt;/p&gt;&lt;img src=\'js.webp\' alt=\'JavaScript\' style=\'width:50%; max-width:600px; margin-top:15px; \'&gt;'
+             )">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill">
+          <img src="py.png" alt="Python" onclick="showPopup(
+               '&lt;h2&gt;Python&lt;/h2&gt;&lt;p&gt;Python adalah bahasa pemrograman tingkat tinggi yang dikenal karena sintaksnya yang sederhana dan mudah dipelajari. Python digunakan dalam berbagai bidang seperti pengembangan web, analisis data, kecerdasan buatan, otomatisasi, dan banyak lagi.&lt;/p&gt;&lt;img src=\'py.png\' alt=\'Python\' style=\'width:50%; max-width:600px; margin-top:15px; \'&gt;'
+             )">
+          <h3>Python</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== PRESTASI ==== -->
+  <section id="prestasi">
+    <div class="fade">
+      <h1>Prestasi</h1>
+      <div class="prestasi-grid">
+        <div class="p1">
+          <img src="p1.jpg" alt="Prestasi"onclick="showPopup(
+               '&lt;h2&gt;Juara 2&lt;/h2&gt;&lt;p&gt;Turnament Battle Of Champion VOL 9. Organized by JeteXTournament&lt;/p&gt;&lt;img src=\'p1.jpg\' alt=\'Juara 2\' style=\'width:50%; max-width:600px; margin-top:15px; \'&gt;'
+             )">
+          <p>Juara 2 Turnament Battle Of Champion VOL 9</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== CONTACT ==== -->
+<section id="contact">
+  <div class="fade">
+    <h1>Kontak Saya</h1>
+
+    <div class="contact-container">
+      <!-- FORM KONTAK -->
+      <form class="contact-form">
+        <label>Email</label><br>
+        <input type="email" placeholder="Alamat email kamu"><br><br>
+
+        <label>Pesan</label><br>
+        <textarea rows="5" placeholder="Tulis pesanmu di sini..."></textarea><br><br>
+
+        <input type="submit" value="Kirim">
+      </form>
+
+      <!-- MAPS -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.432748024821!2d112.73140327431467!3d-7.3051823718174385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb9ef4d7d9ed%3A0x5959ad479fd46d02!2sSMK%20Negeri%201%20Surabaya!5e0!3m2!1sid!2sid!4v1762995569849!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          width="100%"
+          height="100%"
+          style="border:0; border-radius:10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ==== SOSMED ==== -->
+  <footer class="sosmed">
+    <p>&copy; 2025 Dims X RPL 1</p>
+    <a href="https://www.instagram.com/dimmsqt?igsh=aDN3czc2NzUzbGxw"><img src="ig.png" alt="Instagram"></a>
+    <a href="https://github.com/Dimsqt"><img src="gh.svg" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/adimas-hana-satria-725608382"><img src="li.png" alt="LinkedIn"></a>
+  </footer>
+
+  <div id="popup-overlay" class="popup-overlay hidden">
+      <div class="popup-content">
+        <span class="popup-close" id="popup-close">×</span>
+        <div id="popup-body"></div>
+      </div>
+    </div>
+
+  <script>
+  // === Animasi muncul ===
+  const faders = document.querySelectorAll('.fade');
+  const appear = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  faders.forEach(fade => appear.observe(fade));
+
+  // === Popup ===
+  const popupOverlay = document.getElementById('popup-overlay');
+  const popupContent = document.querySelector('.popup-content');
+  const popupBody = document.getElementById('popup-body');
+  const popupClose = document.getElementById('popup-close');
+
+  // Popup umum
+  window.showPopup = (content) => {
+    popupBody.innerHTML = content;
+    popupContent.classList.remove('edu-popup');
+    popupOverlay.classList.remove('hidden');
+  };
+
+  // Popup khusus pendidikan (gambar doang)
+  window.showImagePopupEdu = (src) => {
+    popupBody.innerHTML = `<img src="${src}" class="popup-img-edu">`;
+    popupContent.classList.add('edu-popup');
+    popupOverlay.classList.remove('hidden');
+  };
+
+  // Tutup popup
+  const hidePopup = () => {
+    popupOverlay.classList.add('hidden');
+    popupBody.innerHTML = '';
+    popupContent.classList.remove('edu-popup');
+  };
+
+  popupClose.addEventListener('click', hidePopup);
+  popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) hidePopup();
+  });
+</script>
 </body>
 </html>
